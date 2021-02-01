@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "jsx": "preserve",
+    "outDir": ".build"
+  },
+  "include": [
+    "app/**/*.ts",
+    "app/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
