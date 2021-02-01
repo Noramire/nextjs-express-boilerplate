@@ -4,10 +4,10 @@
   },
   "extends": [
     "plugin:react/recommended",
+    "airbnb",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:import/typescript",
-    "airbnb"
+    "plugin:import/typescript"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -21,6 +21,14 @@
     "react",
     "@typescript-eslint"
   ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+      }
+    }
+  },
   "overrides": [
     {
       "files": ["**/*.tsx"],
