@@ -14,11 +14,13 @@
     "moduleResolution": "node",
     "isolatedModules": false,
     "jsx": "preserve",
-    "outDir": ".build"
+    "outDir": ".build",
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
   "include": [
     "app/**/*.ts",
-    "app/**/*.tsx"
+    "app/**/*.tsx",
+    "declarations.d.ts"
   ],
   "exclude": [
     "node_modules"
