@@ -1,5 +1,7 @@
 {
   "env": {
+    "browser": true,
+    "node": true,
     "es2021": true
   },
   "extends": [
@@ -59,7 +61,12 @@
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
     "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
+    "react/require-default-props": "off",
     "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "eqeqeq": "off",
+    "no-underscore-dangle": "off",
+    "import/prefer-default-export": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
